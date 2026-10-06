@@ -1,0 +1,2 @@
+@model IEnumerable<CursosMVC.Models.Curso>
+<h2>Resumo</h2><p>Total: @Model.Count()</p><p>Disponíveis: @Model.Count(x=>x.Vagas>0)</p><p>Lotados: @Model.Count(x=>x.Vagas==0)</p><p>Online: @Model.Count(x=>x.Modalidade=="Online")</p><p>Presenciais: @Model.Count(x=>x.Modalidade=="Presencial")</p>

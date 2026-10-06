@@ -1,0 +1,2 @@
+@model IEnumerable<PedidosMVC.Models.Pedido>
+<h2>Resumo</h2><p>Total de pedidos: @Model.Count()</p><p>Valor total: R$ @Model.Sum(x=>x.Total)</p>

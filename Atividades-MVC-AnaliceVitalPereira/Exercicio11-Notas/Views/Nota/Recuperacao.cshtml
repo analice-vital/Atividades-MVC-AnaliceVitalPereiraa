@@ -1,0 +1,2 @@
+@model IEnumerable<NotasMVC.Models.Aluno>
+<h2>Recuperação</h2>@foreach(var a in Model){<div class="card">@a.Nome - Média: @a.Media.ToString("F2")</div>}

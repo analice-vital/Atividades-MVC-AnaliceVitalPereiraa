@@ -1,0 +1,2 @@
+@model IEnumerable<VeterinariaMVC.Models.Animal>
+<h2>Gatos</h2>@foreach(var a in Model){<div class="card">@a.Nome - @a.Idade anos - Dono: @a.Dono</div>}

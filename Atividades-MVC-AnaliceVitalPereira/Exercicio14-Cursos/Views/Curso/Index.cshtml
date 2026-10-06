@@ -1,0 +1,2 @@
+@model IEnumerable<CursosMVC.Models.Curso>
+<h2>Cursos</h2><table><tr><th>Nome</th><th>Carga</th><th>Modalidade</th><th>Vagas</th><th>Valor</th><th>Situação</th></tr>@foreach(var c in Model){<tr><td>@c.Nome</td><td>@c.CargaHoraria h</td><td>@c.Modalidade</td><td>@c.Vagas</td><td>R$ @c.Valor</td><td>@c.Situacao</td></tr>}</table>

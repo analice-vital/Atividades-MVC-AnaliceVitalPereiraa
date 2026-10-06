@@ -1,0 +1,2 @@
+@model IEnumerable<FuncionariosMVC.Models.Funcionario>
+<h2>Funcionários</h2><table><tr><th>Nome</th><th>Cargo</th><th>Departamento</th><th>Salário</th><th>Status</th><th>Faixa</th></tr>@foreach(var f in Model){<tr><td>@f.Nome</td><td>@f.Cargo</td><td>@f.Departamento</td><td>R$ @f.Salario</td><td>@f.Situacao</td><td>@f.FaixaSalarial</td></tr>}</table>

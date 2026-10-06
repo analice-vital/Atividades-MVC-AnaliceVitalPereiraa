@@ -1,0 +1,2 @@
+@model IEnumerable<EletronicosMVC.Models.Eletronico>
+<h2>Produtos abaixo de R$ 1.000</h2>@foreach(var p in Model){<div class="card">@p.Nome - R$ @p.Preco</div>}

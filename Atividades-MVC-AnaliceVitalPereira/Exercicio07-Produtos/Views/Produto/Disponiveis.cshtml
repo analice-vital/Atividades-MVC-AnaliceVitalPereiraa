@@ -1,0 +1,2 @@
+@model IEnumerable<ProdutosMVC.Models.Produto>
+<h2>Produtos disponíveis</h2>@foreach(var p in Model){<div class="card"><b>@p.Nome</b> - @p.Estoque unidades - R$ @p.Preco</div>}

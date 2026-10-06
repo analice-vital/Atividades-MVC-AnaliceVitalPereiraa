@@ -1,0 +1,2 @@
+@model IEnumerable<BibliotecaMVC.Models.Livro>
+<h2>Livros disponíveis</h2>@foreach(var l in Model){<div class="card">@l.Titulo - @l.Autor</div>}

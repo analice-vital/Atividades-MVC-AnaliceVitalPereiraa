@@ -1,0 +1,2 @@
+@model IEnumerable<NotasMVC.Models.Aluno>
+<h2>Notas</h2><table><tr><th>Nome</th><th>Curso</th><th>Média</th></tr>@foreach(var a in Model){<tr><td>@a.Nome</td><td>@a.Curso</td><td>@a.Media.ToString("F2")</td></tr>}</table>

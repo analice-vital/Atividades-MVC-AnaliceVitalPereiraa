@@ -1,0 +1,2 @@
+@model IEnumerable<CursosMVC.Models.Curso>
+<h2>Cursos disponíveis</h2>@foreach(var c in Model){<div class="card">@c.Nome - @c.Vagas vagas</div>}

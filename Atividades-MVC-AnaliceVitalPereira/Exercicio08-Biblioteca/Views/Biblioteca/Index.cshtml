@@ -1,0 +1,2 @@
+@model IEnumerable<BibliotecaMVC.Models.Livro>
+<h2>Biblioteca</h2><table><tr><th>Título</th><th>Autor</th><th>Ano</th><th>Status</th></tr>@foreach(var l in Model){<tr><td>@l.Titulo</td><td>@l.Autor</td><td>@l.Ano</td><td>@(l.Disponivel?"Disponível":"Emprestado")</td></tr>}</table>
